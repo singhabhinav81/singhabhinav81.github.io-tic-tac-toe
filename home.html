@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <script language="javascript" type="text/javascript" src="game.js"></script>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1><br/>
+    <hr/>
+    <div style="overflow-x:auto;">
+    <table border="1" id="table">
+      <tr>
+        <td><a href="javascript:Move('A')"><img src="blank.jpg" border=0 height=100 width=100 id="A"/></a></td>
+        <td><a href="javascript:Move('B')"><img src="blank.jpg" border=0 height=100 width=100 id="B"/></a></td>
+        <td><a href="javascript:Move('C')"><img src="blank.jpg" border=0 height=100 width=100 id="C"/></a></td>
+      </tr>
+        <tr>
+          <td><a href="javascript:Move('D')"><img src="blank.jpg" border=0 height=100 width=100 id="D"/></a></td>
+          <td><a href="javascript:Move('E')"><img src="blank.jpg" border=0 height=100 width=100 id="E"/></a></td>
+          <td><a href="javascript:Move('F')"><img src="blank.jpg" border=0 height=100 width=100 id="F"/></a></td>
+        </tr>
+          <tr>
+            <td><a href="javascript:Move('G')"><img src="blank.jpg" border=0 height=100 width=100 id="G"/></a></td>
+            <td><a href="javascript:Move('H')"><img src="blank.jpg" border=0 height=100 width=100 id="H"/></a></td>
+            <td><a href="javascript:Move('I')"><img src="blank.jpg" border=0 height=100 width=100 id="I"/></a></td>
+          </tr>
+    </table>
+
+    <table id="table2">
+      <tr>
+        <td>
+          <input type="text" size="5" id="player1" value="0" />
+          <td>
+            Player1
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" size="5" id="player2" value="0"  />
+          <td>
+            Player2
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" size="5" id="ties" value="0" />
+          <td>
+            Ties
+          </td>
+        </td>
+      </tr>
+    </table>
+
+    </div>
+   <input type="button" value="Play Again" onclick="playAgain();" />
+   &nbsp; &nbsp;
+   <input type="button" value="Game Help" onclick="help();"  />
+</body>
+</html>

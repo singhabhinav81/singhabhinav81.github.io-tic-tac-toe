@@ -1,0 +1,10 @@
+a{
+  text-decoration: none;
+}
+img:hover{
+  opacity:0.09;
+}
+input[type="button"]{
+  padding: 5px;
+  margin: 10px;
+}
